@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+:root {
+    --background: #FFFFFF;
+}
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -28,6 +32,9 @@ header.head {
     background-image: url('https://static-ca-cdn.eporner.com/gallery/b8/qm/w1dyYhrqmb8/306277-sasha-grey-nude.jpg');
     */
     height: 300px;
+    /*
+    border-top: 10px var(--background) solid;
+    */
 }
 
 .logo {
@@ -40,6 +47,38 @@ header.head {
     width: 128px;
     z-index: 2;
     left: 20px;
+    cursor: pointer;
+}
+
+#nav-logo h1 {
+    visibility: hidden;
+}
+
+ul {
+    margin: 0;
+}
+
+#nav {
+    position: absolute;
+    z-index: 2;
+}
+
+#nav ul {
+    margin: 0px 0px 0px 200px;
+}
+
+#nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-top: 12.5px;
+    padding: 10px;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .overlay {
@@ -50,6 +89,7 @@ header.head {
     width: 100%;
     background-color: #212529;
     opacity: .5;
+    z-index: 0;
 }
 
 .h1,
