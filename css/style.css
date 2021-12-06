@@ -12,10 +12,8 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-#obrazki {
-    justify-content: center;
-    align-items: center;
-    display: flex;
+a {
+    text-decoration: none
 }
 
 img {
@@ -24,6 +22,12 @@ img {
 
 #main {
     width: 100%;
+}
+
+#obrazki {
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .ul-flex {
@@ -36,11 +40,43 @@ img {
     list-style: none;
 }
 
+.ul-grid {
+    display: grid;
+}
+
+.ul-grid li {
+    width: 33.3%;
+    margin: 20px 0px 20px 0px;
+    list-style: none;
+}
+
+.li-arrow li::before {
+    content: "»";
+    color: red;
+    font-size: 1.2em;
+    padding-right: 4px;
+    text-align: center;
+    float: center;
+}
+
+.li-links li {
+    width: 50%;
+    font-weight: 700;
+}
+
+.li-links li a {
+    transition: 0.3s color;
+    color: #222;
+}
+
+.li-links li a:hover {
+    color: blue;
+}
+
 .container {
     width: 100%;
     justify-content: center;
     align-items: center;
-    display: flex;
 }
 
 .mg-r-25 {
@@ -51,14 +87,20 @@ img {
     margin-left: 25px;
 }
 
-#c1 {
+#c1,
+#c2 {
     text-align: center;
-    margin: 3rem
+    margin: 3rem;
 }
 
 #c1 p,
-#c1 hr {
+#c1 hr,
+#c2 hr {
     margin: 2rem 3.5rem 2rem 3.5rem;
+}
+
+#c2 p {
+    margin: 1.5rem 2rem 3rem 2rem;
 }
 
 header.head {
@@ -112,7 +154,6 @@ ul {
 }
 
 #numer a {
-    text-decoration: none;
     color: white;
     font-size: 1rem;
     font-weight: 500;
@@ -130,7 +171,6 @@ ul {
 }
 
 #nav ul li a {
-    text-decoration: none;
     color: white;
     font-size: 1rem;
     font-weight: 500;
