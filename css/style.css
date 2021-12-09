@@ -1,194 +1,252 @@
 /* Czcionka Roboto */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /* Font Awesome */
-@import url('https://tihub.pl/vendor/fontawesome-free/css/all.min.css');
+@import url("https://tihub.pl/vendor/fontawesome-free/css/all.min.css");
 
 :root {
-    --background: #FFFFFF;
+  --background: #ffffff;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
-    text-decoration: none
+  text-decoration: none;
 }
 
 img {
-    border: 0;
+  border: 0;
 }
 
 #main {
-    width: 100%;
-}
-
-#obrazki {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-.ul-flex {
-    display: flex;
-}
-
-.ul-flex li {
-    width: 33.3%;
-    margin: 20px 0px 20px 0px;
-    list-style: none;
-}
-
-.ul-grid {
-    display: grid;
-}
-
-.ul-grid li {
-    width: 33.3%;
-    margin: 20px 0px 20px 0px;
-    list-style: none;
-}
-
-.li-arrow li::before {
-    content: "»";
-    color: red;
-    font-size: 1.2em;
-    padding-right: 4px;
-    text-align: center;
-    float: center;
-}
-
-.li-links li {
-    width: 50%;
-    font-weight: 700;
-}
-
-.li-links li a {
-    transition: 0.3s color;
-    color: #222;
-}
-
-.li-links li a:hover {
-    color: blue;
+  width: 100%;
 }
 
 .container {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#obrazki {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.ul-flex {
+  display: flex;
+}
+
+.ul-flex li {
+  width: 33.3%;
+  margin: 20px 0px 20px 0px;
+  list-style: none;
+}
+
+.ul-grid {
+  display: grid;
+}
+
+.ul-grid li {
+  width: 33.3%;
+  margin: 20px 0px 20px 0px;
+  list-style: none;
+}
+
+.li-arrow li::before {
+  content: "»";
+  color: red;
+  font-size: 1.2em;
+  padding-right: 4px;
+  text-align: center;
+}
+
+.li-links li {
+  width: 50%;
+  font-weight: 700;
+}
+
+.li-links li a {
+  transition: 0.3s color;
+  color: #222;
+}
+
+.li-links li a:hover {
+  color: blue;
 }
 
 .mg-r-25 {
-    margin-right: 25px;
+  margin-right: 25px;
 }
 
 .mg-l-25 {
-    margin-left: 25px;
+  margin-left: 25px;
 }
 
 #c1,
 #c2 {
-    text-align: center;
-    margin: 3rem;
+  text-align: center;
+  margin: 3rem;
 }
 
 #c1 p,
 #c1 hr,
 #c2 hr {
-    margin: 2rem 3.5rem 2rem 3.5rem;
+  margin: 2rem 3.5rem 2rem 3.5rem;
 }
 
 #c2 p {
-    margin: 1.5rem 2rem 3rem 2rem;
+  margin: 1.5rem 2rem 3rem 2rem;
 }
 
 header.head {
-    margin-bottom: 50px;
-    background: no-repeat center center;
-    background-attachment: scroll;
-    position: relative;
-    background-size: cover;
-    background-image: url('../images/jp2.jpg');
-    /* 
+  margin-bottom: 50px;
+  background: no-repeat center center;
+  background-attachment: scroll;
+  position: relative;
+  background-size: cover;
+  background-image: url("../images/jp2.jpg");
+  /* 
     background-image: url('https://static-ca-cdn.eporner.com/gallery/b8/qm/w1dyYhrqmb8/306277-sasha-grey-nude.jpg');
     */
-    height: 300px;
-    /*
+  height: 300px;
+  /*
     border-top: 10px var(--background) solid;
     */
 }
 
 .logo {
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-image: url('../images/kremowka300x300.png');
-    position: absolute;
-    height: 12.5vh;
-    width: 12.5vh;
-    z-index: 2;
-    left: 20px;
-    cursor: pointer;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-image: url("../images/kremowka300x300.png");
+  position: absolute;
+  height: 135px;
+  width: 135px;
+  z-index: 2;
+  left: 20px;
+  cursor: pointer;
 }
 
 #nav-logo h1 {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 ul {
-    margin: 0;
+  margin: 0;
 }
 
 #nav {
-    position: absolute;
-    z-index: 2;
+  position: absolute;
+  z-index: 2;
 }
 
 #numer {
-    position: absolute;
-    z-index: 2;
-    right: 0;
-    margin-top: 12.5px;
-    padding: 10px 25px 10px 10px;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  margin-top: 12.5px;
+  padding: 10px 25px 10px 10px;
 }
 
 #numer a {
-    color: white;
-    font-size: 1rem;
-    font-weight: 500;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 #nav ul {
-    margin: 0px 0px 0px 200px;
+  margin: 0px 0px 0px 200px;
 }
 
 #nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin-top: 12.5px;
-    padding: 10px;
+  display: inline-block;
+  list-style: none;
+  margin-top: 12.5px;
+  padding: 10px;
 }
 
 #nav ul li a {
-    color: white;
-    font-size: 1rem;
-    font-weight: 500;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+footer {
+  margin-top: 100px;
+  width: 100%;
+  height: 150px;
+  background-color: #212529;
+  color: #fff;
+  padding: 20px;
+}
+
+footer #copyright {
+  text-align: center;
+  font-size: 1em;
+  margin-top: 8px;
+}
+
+footer #footer-menu {
+  display: flex;
+}
+
+footer #footer-menu .left {
+  display: inline-block;
+  width: 30%;
+  height: 100px;
+  padding: 8px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+footer #footer-menu .center {
+  display: inline-block;
+  width: 30%;
+  height: 100px;
+  padding: 8px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+footer #footer-menu .right {
+  display: inline-block;
+  width: 30%;
+  height: 100px;
+  padding: 8px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+footer #footer-menu .right a {
+  color: #fff;
+  transition: 0.3s;
+  text-decoration: underline;
+  font-size: 1.15em;
+}
+
+footer #footer-menu .right a:hover {
+  color: #008b8b;
+  text-decoration: none;
+  font-size: 1em;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #212529;
-    opacity: .5;
-    z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #212529;
+  opacity: 0.5;
+  z-index: 0;
 }
 
 .h1,
@@ -203,38 +261,38 @@ h3,
 h4,
 h5,
 h6 {
-    margin-top: 0;
-    margin-bottom: .5rem;
-    font-weight: 500;
-    line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .h1,
 h1 {
-    font-size: calc(1.375rem + 1.5vw)
+  font-size: calc(1.375rem + 1.5vw);
 }
 
 .h2,
 h2 {
-    font-size: calc(1.325rem + .9vw)
+  font-size: calc(1.325rem + 0.9vw);
 }
 
 .h3,
 h3 {
-    font-size: calc(1.3rem + .6vw)
+  font-size: calc(1.3rem + 0.6vw);
 }
 
 .h4,
 h4 {
-    font-size: calc(1.275rem + .3vw)
+  font-size: calc(1.275rem + 0.3vw);
 }
 
 .h5,
 h5 {
-    font-size: 1.25rem
+  font-size: 1.25rem;
 }
 
 .h6,
 h6 {
-    font-size: 1rem
+  font-size: 1rem;
 }
